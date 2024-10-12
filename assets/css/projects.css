@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+
+/*Variables*/
+:root {
+    --font-family: "Roboto", sans-serif;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;
+    --primary-color: #1a2640;
+    --secondary-color: #004aad;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #def0f2;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+
+}
+/*variables end*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+nav h1{
+    font-weight: var(--bold-font);
+    color: var(--primary-color);
+}
+nav {
+    box-shadow: 0 3px 5px var(--primary-shadow);
+}
+
+nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+  }
+  nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+
+  nav ul li {
+    font-weight: var(--bold-font);
+  }
+
+  .edurobot {
+    padding: 20px;
+    align-content: center;
+  }
+  .edurobot h2 {
+    text-align: center;
+    padding: 20px;
+    font-weight: var(--bold-font);
+  }
+  
+  .edurobot h5 {
+    text-align: center;
+    padding: 5px;
+  }
+
+  .project-list {
+    list-style-type: disc;
+  }
+  .col {
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: -5px;
+  }
+
+ .tool {
+    border-collapse: collapse;
+  }
+
+  .tool td {
+    padding: 5px;
+  }
+  .edu-img {
+    border-radius: 5px;
+    max-width: 80%;
+    height: 80%;
+  }
+
+  .design-edu {
+    font-family: var(--font-family);
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .design td, th {
+    border: 2px solid var(--primary-color);
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .design tr:nth-child(even) {
+    background-color: var(--primary-shadow);
+  }
+
+  div.gallery:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  div.gallery img {
+    height: 100%;
+    width: auto;
+    border-radius: 5px;
+  }
+
+  .responsive {
+    padding: 0 3px;
+    float: left;
+    width: 25%;
+  }
+  .socials {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+ }
+
+ .socicon {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    animation: fadeIn 5s;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+ }
+
+ footer {
+    background-color: var(--bg-color);
+    padding: 20px;
+    text-align: center;
+    margin: 32px 0 0;
+ }
+
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  /*Project sink twice*/
+  .sink {
+    padding: 20px;
+    padding-top: 230px;
+    align-content: center;
+  }
+  .sink h2 {
+    text-align: center;
+    padding-top: 100px;
+    font-weight: var(--bold-font);
+  }
+
+  .sink h5 {
+    text-align: center;
+    padding: 5px;
+  }
+
+  .sink-img {
+    border-radius: 5px;
+    max-width: 80%;
+    height: 80%;
+  }
+
+  #myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    min-width: 100%;
+    min-height: 50%;
+    z-index: -1;
+    object-position: bottom;
+    object-fit: cover;
+  }
+  
+  .sink-design {
+    border-radius: 5px;
+    max-width: 100%;
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+    /*Project studierendenwerk*/
+    .studi {
+      padding: 20px;
+      align-content: center;
+    }
+    .studi h2 {
+      text-align: center;
+      font-weight: var(--bold-font);
+    }
+
+    .studi-img {
+      border-radius: 5px;
+      max-width: 80%;
+      height: 100%;
+    }
+
+    .studi-design {
+      border-radius: 5px;
+      max-width: 100%;
+      height: 80%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    /*Project studierendenwerk*/
+    .nexus {
+      padding: 20px;
+      align-content: center;
+    }
+    .nexus h2 {
+      text-align: center;
+      font-weight: var(--bold-font);
+    }
+
+    .nexus h5 {
+      text-align: center;
+    }
+    .nexus-img {
+      border-radius: 5px;
+      max-width: 80%;
+      height: 80%;
+    }
+
+    .nexus-design {
+      border-radius: 5px;
+      max-width: 100%;
+      height: 80%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+/* Communication design */
+.comdes {
+  padding: 20px;
+  align-content: center;
+}
+
+.comdes h2 {
+  text-align: center;
+  font-weight: var(--bold-font);
+}
+
+.poster {
+  align-content: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    height: 50%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    height: 100%;
+  }
+}
