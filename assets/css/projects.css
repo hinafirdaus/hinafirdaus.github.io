@@ -3,19 +3,18 @@
 
 /*Variables*/
 :root {
-    --font-family: "Roboto", sans-serif;
-    --normal-font: 400;
-    --bold-font: 700;
-    --bolder-font: 900;
-    --bg-color: #fcfcfc;
-    --primary-color: #1a2640;
-    --secondary-color: #004aad;
-    --primary-shadow: #8b8eaf;
-    --secondary-shadow: #def0f2;
-    --bottom-margin: 0.5rem;
-    --bottom-margin-2: 1rem;
-    --line-height: 1.7rem;
-    --transition: 0.3s;
+  --font-family: "Roboto", sans-serif;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fffff;
+  --primary-color: #002060;
+  --secondary-color: #004aad;
+  --primary-shadow: #99a6bf;
+  --secondary-shadow: #def0f2;
+  --bottom-margin: 10px;
+  --bottom-margin-2: 15px;
+  --line-height: 25px;
 
 }
 /*variables end*/
@@ -67,31 +66,38 @@ nav a {
 
   nav ul li {
     font-weight: var(--bold-font);
+    float: right;
   }
-
-  .edurobot {
-    padding: 20px;
-    align-content: center;
+  .collapse.navbar-collapse {
+    padding: 10px !important;
   }
-  .edurobot h2 {
-    text-align: center;
-    padding: 20px;
-    font-weight: var(--bold-font);
+  .container {
+    max-width: 500px;
+    margin: auto;
   }
   
-  .edurobot h5 {
-    text-align: center;
-    padding: 5px;
+  .edurobot {
+    padding: 20px;
+    margin: auto;
+    max-width: 80%;
   }
+ .pro-header{
+  text-align: left;
+ }
 
   .project-list {
     list-style-type: disc;
   }
   .col {
     padding: 10px;
-    margin-left: 10px;
-    margin-top: -5px;
+    margin-top: 10px;
   }
+.video-edurobot {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
  .tool {
     border-collapse: collapse;
@@ -100,13 +106,21 @@ nav a {
   .tool td {
     padding: 5px;
   }
+
   .edu-img {
     border-radius: 5px;
-    max-width: 80%;
-    height: 80%;
+    max-width: 100%;
+    height: 100%;
+    align-items: center;
   }
 
-  .design-edu {
+  .project-cover {
+    align-items: center;
+    border-radius: 5px;
+  }
+ 
+
+.design-edu {
     font-family: var(--font-family);
     border-collapse: collapse;
     width: 100%;
@@ -174,24 +188,16 @@ nav a {
   /*Project sink twice*/
   .sink {
     padding: 20px;
-    padding-top: 230px;
+    padding-top: 300px;
     align-content: center;
   }
-  .sink h2 {
-    text-align: center;
-    padding-top: 100px;
-    font-weight: var(--bold-font);
-  }
-
-  .sink h5 {
-    text-align: center;
-    padding: 5px;
-  }
-
+ 
   .sink-img {
     border-radius: 5px;
-    max-width: 80%;
-    height: 80%;
+    display:flex;
+    justify-content:center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #myVideo {
@@ -222,6 +228,11 @@ nav a {
       padding: 20px;
       align-content: center;
     }
+
+    .studi-cover {
+      border-radius: 5px;
+      height: 70%;
+    }
     .studi h2 {
       text-align: center;
       font-weight: var(--bold-font);
@@ -231,6 +242,8 @@ nav a {
       border-radius: 5px;
       max-width: 80%;
       height: 100%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .studi-design {
@@ -247,18 +260,13 @@ nav a {
       padding: 20px;
       align-content: center;
     }
-    .nexus h2 {
-      text-align: center;
-      font-weight: var(--bold-font);
-    }
-
-    .nexus h5 {
-      text-align: center;
-    }
+   
     .nexus-img {
       border-radius: 5px;
-      max-width: 80%;
-      height: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      height: auto;
     }
 
     .nexus-design {
@@ -282,18 +290,43 @@ nav a {
 }
 
 .poster {
+  border-radius: 5px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   align-content: center;
 }
 
 @media only screen and (max-width: 700px) {
-  .responsive {
-    height: 50%;
-    margin: 6px 0;
+  .container {
+    margin: auto;
+  }
+  
+  .edurobot {
+    padding: 5px;
+    margin: auto;
+    max-width: 77%;
+  }
+  .project-cover {
+    align-items: center;
+    max-width: 80%;
+    border-radius: 5px;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .responsive {
-    height: 100%;
+  .container {
+    margin: auto;
+  }
+  
+  .edurobot {
+    padding: 5px;
+    margin: auto;
+    max-width: 75%;
+  }
+  .project-cover {
+    align-items: center;
+    max-width: 80%;
+    border-radius: 5px;
   }
 }
