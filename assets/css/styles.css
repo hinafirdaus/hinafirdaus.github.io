@@ -97,7 +97,7 @@ nav a {
 .console-container {
  
   font-family: var(--font-family);
-  font-size:  4em;
+  font-size:  2.5em;
   text-align:center;
   display:block;
   position:absolute;
@@ -113,7 +113,7 @@ nav a {
 }
 
 .bio-head {
-  padding-top: 120px;
+  padding-top: 180px;
   text-align: left;
 }
 .bio-subhead {
